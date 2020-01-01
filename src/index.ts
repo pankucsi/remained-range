@@ -60,16 +60,3 @@ const calculateRemainedRange = (range: NumberRange, range2: NumberRange): Number
 
   return sameRange.handle(range, range2)
 }
-
-const createDate = (hour: number, minutes: number): Date => {
-  const d = new Date()
-  d.setUTCHours(hour, minutes, 0, 0)
-  return d
-}
-
-console.log(
-  remainedRange(
-    { end: createDate(20, 0), start: createDate(2, 0) },
-    { end: createDate(17, 0), start: createDate(16, 0) },
-  ),
-)
