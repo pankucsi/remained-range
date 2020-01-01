@@ -43,10 +43,3 @@ var calculateRemainedRange = function (range, range2) {
         .setNext(new handler_1.NotOverlapingHandler());
     return sameRange.handle(range, range2);
 };
-var createDate = function (hour, minutes) {
-    var d = new Date();
-    d.setUTCHours(hour, minutes, 0, 0);
-    return d;
-};
-console.log(exports.remainedRange({ end: createDate(20, 0), start: createDate(2, 0) }, { end: createDate(17, 0), start: createDate(16, 0) }));
-//# sourceMappingURL=index.js.map
